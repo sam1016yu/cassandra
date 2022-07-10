@@ -170,6 +170,8 @@ public abstract class AbstractReplicationStrategy
      */
     public Multimap<InetAddress, Range<Token>> getAddressRanges(TokenMetadata metadata)
     {
+
+        logger.warn("COVERAGE CHECK|ca13923|getAddressRanges");
         Multimap<InetAddress, Range<Token>> map = HashMultimap.create();
 
         for (Token token : metadata.sortedTokens())

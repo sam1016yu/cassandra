@@ -431,6 +431,7 @@ public class CompactionStrategyManager implements INotificationConsumer
 
     private void handleFlushNotification(Iterable<SSTableReader> added)
     {
+        logger.warn("COVERAGE CHECK|ca13923|handleFlushNotification");
         readLock.lock();
         try
         {
