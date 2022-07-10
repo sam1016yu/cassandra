@@ -1,0 +1,1865 @@
+Buildfile: /users/miaoyu/cassandra/build.xml
+
+init:
+
+maven-ant-tasks-localrepo:
+
+maven-ant-tasks-download:
+
+maven-ant-tasks-init:
+
+maven-declare-dependencies:
+
+maven-ant-tasks-retrieve-build:
+
+init-dependencies:
+     [echo] Loading dependency paths from file: /users/miaoyu/cassandra/build/build-dependencies.xml
+
+init-dependencies:
+     [echo] Loading dependency paths from file: /users/miaoyu/cassandra/build/build-dependencies-sources.xml
+    [unzip] Expanding: /users/miaoyu/cassandra/build/lib/jars/org.jacoco.agent-0.7.5.201505241946.jar into /users/miaoyu/cassandra/build/lib/jars
+
+check-gen-cql3-grammar:
+
+gen-cql3-grammar:
+
+generate-cql-html:
+
+build-project:
+     [echo] apache-cassandra: /users/miaoyu/cassandra/build.xml
+
+createVersionPropFile:
+[propertyfile] Updating property file: /users/miaoyu/cassandra/src/resources/org/apache/cassandra/config/version.properties
+     [copy] Copying 1 file to /users/miaoyu/cassandra/build/classes/main
+
+build:
+
+build-test:
+
+get-cores:
+     [echo] Number of cores: 40
+
+get-mem:
+     [echo] Mem size : 201422274560
+
+test:
+     [echo] Number of test runners: 6
+    [mkdir] Created dir: /users/miaoyu/cassandra/build/test/cassandra
+    [mkdir] Created dir: /users/miaoyu/cassandra/build/test/output
+[junit-timeout] Testsuite: org.apache.cassandra.batchlog.BatchlogManagerTest
+[junit-timeout] Testsuite: org.apache.cassandra.auth.RoleOptionsTest
+[junit-timeout] Testsuite: org.apache.cassandra.auth.PasswordAuthenticatorTest
+[junit-timeout] Testsuite: org.apache.cassandra.batchlog.BatchTest
+[junit-timeout] Testsuite: org.apache.cassandra.cache.AutoSavingCacheTest
+[junit-timeout] Testsuite: org.apache.cassandra.batchlog.BatchlogEndpointFilterTest
+[junit-timeout] Testsuite: org.apache.cassandra.batchlog.BatchlogEndpointFilterTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.auth.RoleOptionsTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.691 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cache.CacheProviderTest
+[junit-timeout] Testsuite: org.apache.cassandra.auth.PasswordAuthenticatorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.72 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.concurrent.DebuggableScheduledThreadPoolExecutorTest
+[junit-timeout] Testsuite: org.apache.cassandra.concurrent.DebuggableThreadPoolExecutorTest
+[junit-timeout] Testsuite: org.apache.cassandra.batchlog.BatchTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.241 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:2
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:2
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:2
+[junit-timeout] Testsuite: org.apache.cassandra.concurrent.DebuggableThreadPoolExecutorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.171 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cache.AutoSavingCacheTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.451 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:5
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:5
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:5
+[junit-timeout] Testsuite: org.apache.cassandra.concurrent.SEPExecutorTest
+[junit-timeout] Testsuite: org.apache.cassandra.concurrent.WaitQueueTest
+[junit-timeout] Testsuite: org.apache.cassandra.concurrent.WaitQueueTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.config.CFMetaDataTest
+[junit-timeout] Testsuite: org.apache.cassandra.config.ColumnDefinitionTest
+[junit-timeout] Testsuite: org.apache.cassandra.cache.CacheProviderTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.822 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:6
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:6
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:6
+[junit-timeout] Testsuite: org.apache.cassandra.config.ColumnDefinitionTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.config.DatabaseDescriptorTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql.jdbc.JdbcDecimalTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql.jdbc.JdbcDecimalTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.config.CFMetaDataTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.089 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:11
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:11
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:11
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.CQL3TypeLiteralTest
+[junit-timeout] Testsuite: org.apache.cassandra.batchlog.BatchlogManagerTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.622 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:4
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:4
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:4
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ColumnConditionTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.CQL3TypeLiteralTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.74 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ColumnIdentifierTest
+[junit-timeout] Testsuite: org.apache.cassandra.concurrent.SEPExecutorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.637 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.config.DatabaseDescriptorTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.339 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:13
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:13
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:13
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.CqlParserTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ColumnIdentifierTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.444 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.CqlParserTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ColumnConditionTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.12 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.DeleteTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ErrorCollectorTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ErrorCollectorTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.IndexQueryPagingTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.KeyCacheCqlTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.LargeCompactValueTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ListsTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.LargeCompactValueTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.748 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:23
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:23
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:23
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.NonNativeTimestampTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ListsTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.318 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:24
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:24
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:24
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.OutOfSpaceTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.NonNativeTimestampTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.78 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:25
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:25
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:25
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.PagingTest
+[junit-timeout] Testsuite: org.apache.cassandra.concurrent.DebuggableScheduledThreadPoolExecutorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.145 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:7
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:7
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:7
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.OutOfSpaceTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.543 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:26
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:26
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:26
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.PreparedStatementsTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.QueryWithIndexedSSTableTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.IndexQueryPagingTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.953 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.QueryWithIndexedSSTableTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.456 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:29
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:29
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:29
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:21
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:21
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:21
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ReservedKeywordsTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.SerializationMirrorTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ReservedKeywordsTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.SimpleQueryTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.KeyCacheCqlTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.116 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:22
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:22
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:22
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ThriftCompatibilityTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.SerializationMirrorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.047 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:31
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:31
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:31
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.TombstonesWithIndexedSSTableTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.PagingTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.631 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.DeleteTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.937 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ThriftCompatibilityTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.86 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:33
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:33
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:33
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.UDHelperTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.UDHelperTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.381 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:27
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:27
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:27
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ViewComplexTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ViewFilteringTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:19
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:19
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:19
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.TombstonesWithIndexedSSTableTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.88 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:34
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:34
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:34
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ViewSchemaTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ViewTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.SimpleQueryTest Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.963 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:32
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:32
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:32
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.functions.TimeFctsTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.functions.TimeFctsTest Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.521 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.restrictions.PrimaryKeyRestrictionSetTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.restrictions.PrimaryKeyRestrictionSetTest Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.768 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.selection.SelectionColumnMappingTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.PreparedStatementsTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.593 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.selection.SelectionColumnMappingTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.976 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:42
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:42
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:42
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.ThriftIntegrationTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:28
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:28
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:28
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.CollectionsTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.ThriftIntegrationTest Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.205 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:43
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:43
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:43
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.CountersTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.CollectionsTest Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.601 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:44
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:44
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:44
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.DateTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.DateTypeTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.677 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:46
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:46
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:46
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.CountersTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.786 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:45
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:45
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:45
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.FrozenCollectionsTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.JsonTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.FrozenCollectionsTest Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.163 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:47
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:47
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:47
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.RowUpdateBuilderTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.RowUpdateBuilderTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.251 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:49
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:49
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ViewSchemaTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.034 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:49
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.SecondaryIndexOnMapEntriesTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.JsonTest Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.037 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:38
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:38
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:38
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:48
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:48
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:48
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.StaticColumnsTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.SecondaryIndexOnMapEntriesTest Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.719 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:50
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:50
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:50
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.TimestampTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.StaticColumnsTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.102 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:52
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:52
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:52
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.TimeuuidTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.TimestampTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.944 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:53
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:53
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:53
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.TupleTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.TimeuuidTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.723 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:54
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:54
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:54
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.TypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.TypeTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.303 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:56
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:56
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:56
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFAuthTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.TupleTypeTest Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.169 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:55
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:55
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:55
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFIdentificationTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ViewTest Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 95.777 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.054 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:39
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:39
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:51
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:51
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFAuthTest Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.978 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:57
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:57
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:51
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:57
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:39
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFJavaTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFPureScriptTupleCollectionTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFScriptTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFIdentificationTest Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 21.437 sec
+[junit-timeout] 
+[junit-timeout] Testcase: testModificationStatementWithAttributesFromFunction(org.apache.cassandra.cql3.validation.entities.UFIdentificationTest):SKIPPED
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:58
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:58
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:58
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFSecurityTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ViewFilteringTest Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 110.375 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFPureScriptTupleCollectionTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.64 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFSecurityTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.655 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:37
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:37
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:62
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:62
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:62
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:37
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFTypesTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:60
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:60
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:60
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFVerifierTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFScriptTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.749 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:61
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:61
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:61
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFVerifierTest Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.398 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UserTypesTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:65
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:65
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:65
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.CrcCheckChanceTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFJavaTest Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.291 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:59
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:59
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:59
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.OverflowTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.CrcCheckChanceTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.76 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:67
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:67
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:67
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.PgStringTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFTypesTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.297 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:64
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:64
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:64
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.PgStringTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.972 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.RoleSyntaxTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:69
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:69
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:69
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UFTest Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.935 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.SSTableMetadataTrackingTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:63
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:63
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:63
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.SSTablesIteratedTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.OverflowTest Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.559 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:68
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:68
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:68
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.TombstonesTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.RoleSyntaxTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.046 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:70
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:70
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:70
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.AggregationTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.SSTableMetadataTrackingTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.227 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:71
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:71
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:71
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.SSTablesIteratedTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.194 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:72
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:72
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:72
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.AlterTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.BatchTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.entities.UserTypesTest Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.637 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:66
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:66
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:66
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.CreateTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.miscellaneous.TombstonesTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.303 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:73
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:73
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:73
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.DeleteTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.BatchTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.007 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:76
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:76
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:76
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.ViewComplexTest Tests run: 32, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 151.599 sec
+[junit-timeout] 
+[junit-timeout] Testcase: testPartialDeleteUnselectedColumn(org.apache.cassandra.cql3.ViewComplexTest):SKIPPED
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.DropCompactStorageThriftTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:36
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:36
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:36
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.DropRecreateAndRestoreTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.AlterTest Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.835 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:75
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:75
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:75
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.DropTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.CreateTest Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.067 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:77
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:77
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.DropRecreateAndRestoreTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.037 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:80
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:80
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:80
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:77
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.DropCompactStorageThriftTest Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.02 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.InsertTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.InsertUpdateIfConditionTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.DropTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.552 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:81
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:81
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:81
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectLimitTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:79
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:79
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:79
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectMultiColumnRelationTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.InsertTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.742 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:82
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:82
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:82
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectOrderByTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.AggregationTest Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.645 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:74
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:74
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.DeleteTest Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.154 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:78
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:78
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:74
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:78
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectLimitTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.498 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectSingleColumnRelationTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:84
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:84
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:84
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectMultiColumnRelationTest Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.629 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:85
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:85
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:85
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.TTLTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectOrderByTest Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.119 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:86
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:86
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:86
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.TruncateTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.InsertUpdateIfConditionTest Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.424 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:83
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:83
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.TruncateTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.392 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:91
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:91
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:91
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:83
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.UpdateTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.UseTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.286 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:87
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:87
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:87
+[junit-timeout] Testsuite: org.apache.cassandra.db.CellTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.UseTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.546 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:93
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:93
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:93
+[junit-timeout] Testsuite: org.apache.cassandra.db.CleanupTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.CellTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.385 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:94
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:94
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:94
+[junit-timeout] Testsuite: org.apache.cassandra.db.ColumnFamilyMetricTest
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectSingleColumnRelationTest Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.076 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:88
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:88
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:88
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.TTLTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.134 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:90
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:90
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:90
+[junit-timeout] Testsuite: org.apache.cassandra.db.ColumnFamilyStoreCQLHelperTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.CleanupTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.472 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:95
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:95
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:95
+[junit-timeout] Testsuite: org.apache.cassandra.db.ColumnFamilyMetricTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.78 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:96
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:96
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:96
+[junit-timeout] Testsuite: org.apache.cassandra.db.ColumnFamilyStoreTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.CounterCacheTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.ColumnsTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.ColumnsTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.232 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:99
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:99
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:99
+[junit-timeout] Testsuite: org.apache.cassandra.db.CounterCellTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.CounterCacheTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.061 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:100
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:100
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:100
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.UpdateTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.22 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.CounterMutationTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:92
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:92
+[junit-timeout] Testsuite: org.apache.cassandra.db.ColumnFamilyStoreTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.24 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:98
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:98
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:98
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:92
+[junit-timeout] Testsuite: org.apache.cassandra.db.DeletePartitionTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.CounterCellTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.672 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:101
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:101
+[junit-timeout] Testsuite: org.apache.cassandra.db.DirectoriesTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:101
+[junit-timeout] Testsuite: org.apache.cassandra.db.KeyCacheTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.DirectoriesTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.912 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.KeyspaceTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.CounterMutationTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.046 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:102
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:102
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:102
+[junit-timeout] Testsuite: org.apache.cassandra.db.DeletePartitionTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.581 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:103
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:103
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:103
+[junit-timeout] Testsuite: org.apache.cassandra.db.LegacyCellNameTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.LegacyLayoutTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.ColumnFamilyStoreCQLHelperTest Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.943 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:97
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:97
+[junit-timeout] Testsuite: org.apache.cassandra.db.KeyCacheTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.19 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:105
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:105
+[junit-timeout] Testsuite: org.apache.cassandra.db.LegacyCellNameTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.986 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:105
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:97
+[junit-timeout] Testsuite: org.apache.cassandra.db.MmapFileTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.LivenessInfoTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.MultiKeyspaceTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.MmapFileTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.LivenessInfoTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.NameSortTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.OldFormatDeserializerTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.OldFormatDeserializerTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.913 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.LegacyLayoutTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.117 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:108
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:108
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:108
+[junit-timeout] Testsuite: org.apache.cassandra.db.PartitionRangeReadTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.PartitionTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.MultiKeyspaceTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.947 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:111
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:111
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:111
+[junit-timeout] Testsuite: org.apache.cassandra.db.RangeTombstoneListTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.NameSortTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.97 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:112
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:112
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:112
+[junit-timeout] Testsuite: org.apache.cassandra.db.RangeTombstoneListTest Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.56 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.RangeTombstoneTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.KeyspaceTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.477 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:106
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:106
+[junit-timeout] Testsuite: org.apache.cassandra.db.ReadMessageTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:106
+[junit-timeout] Testsuite: org.apache.cassandra.db.PartitionRangeReadTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.867 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.PartitionTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.832 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:114
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:114
+[junit-timeout] Testsuite: org.apache.cassandra.db.ReadResponseTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:114
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:115
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:115
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:115
+[junit-timeout] Testsuite: org.apache.cassandra.db.RecoveryManagerMissingHeaderTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RecoveryManagerFlushedTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.ReadMessageTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.593 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:118
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:118
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:118
+[junit-timeout] Testsuite: org.apache.cassandra.cql3.validation.operations.SelectTest Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.608 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:89
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:89
+[junit-timeout] Testsuite: org.apache.cassandra.db.ReadResponseTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.657 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:119
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:119
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:119
+[junit-timeout] Testsuite: org.apache.cassandra.db.RecoveryManagerTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:89
+[junit-timeout] Testsuite: org.apache.cassandra.db.RangeTombstoneTest Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.043 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:117
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:117
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:117
+[junit-timeout] Testsuite: org.apache.cassandra.db.RecoveryManagerTruncateTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RemoveCellTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RepairedDataTombstonesTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RecoveryManagerMissingHeaderTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.63 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:121
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:121
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:121
+[junit-timeout] Testsuite: org.apache.cassandra.db.RecoveryManagerFlushedTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.803 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:120
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:120
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:120
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowCacheCQLTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowCacheTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RemoveCellTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.646 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:124
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:124
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:124
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowIndexEntryTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RecoveryManagerTruncateTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.837 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:123
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:123
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:123
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowIterationTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowCacheCQLTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.686 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:126
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:126
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:126
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowCacheTest Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.125 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowIndexEntryTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.285 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:128
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:128
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:128
+[junit-timeout] Testsuite: org.apache.cassandra.db.ScrubTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.345 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:130
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:130
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:130
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:127
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:127
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:127
+[junit-timeout] Testsuite: org.apache.cassandra.db.RowIterationTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.865 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:129
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:129
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:129
+[junit-timeout] Testsuite: org.apache.cassandra.db.RecoveryManagerTest Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.853 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:122
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:122
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:122
+[junit-timeout] Testsuite: org.apache.cassandra.db.SerializationHeaderTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.SecondaryIndexTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.SinglePartitionReadCommandCQLTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.SinglePartitionSliceCommandTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.SerializationHeaderTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.295 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.SystemKeyspaceTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.SinglePartitionReadCommandCQLTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.764 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:134
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:134
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:134
+[junit-timeout] Testsuite: org.apache.cassandra.db.TimeSortTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.SinglePartitionSliceCommandTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.427 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:135
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:135
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:135
+[junit-timeout] Testsuite: org.apache.cassandra.db.SystemKeyspaceTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.19 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:136
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:136
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:136
+[junit-timeout] Testsuite: org.apache.cassandra.db.TransformerTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.VerifyTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.TransformerTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.785 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.ScrubTest Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.761 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:131
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:131
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:131
+[junit-timeout] Testsuite: org.apache.cassandra.db.columniterator.SSTableReverseIteratorTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.AbstractCommitLogServiceTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.AbstractCommitLogServiceTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.893 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:141
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:141
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:141
+[junit-timeout] Testsuite: org.apache.cassandra.db.TimeSortTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.787 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:137
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:137
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:137
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.BatchCommitLogTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.VerifyTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.215 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:139
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:139
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:139
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogCQLTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.columniterator.SSTableReverseIteratorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.609 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:140
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:140
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:140
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogChainedMarkersTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.SecondaryIndexTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.553 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:132
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:132
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:132
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogDescriptorTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogFailurePolicyTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.BatchCommitLogTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.165 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:142
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:142
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:142
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogSegmentBackpressureTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogCQLTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.755 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:143
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:143
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:143
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogChainedMarkersTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.395 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:144
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:144
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:144
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogUpgradeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogSegmentBackpressureTest Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.877 sec
+[junit-timeout] 
+[junit-timeout] Testcase: testCompressedCommitLogBackpressure(org.apache.cassandra.db.commitlog.CommitLogSegmentBackpressureTest):	Caused an ERROR
+[junit-timeout] Connection refused (Connection refused)
+[junit-timeout] java.net.ConnectException: Connection refused (Connection refused)
+[junit-timeout] 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+[junit-timeout] 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+[junit-timeout] 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+[junit-timeout] 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+[junit-timeout] 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+[junit-timeout] 	at java.net.Socket.connect(Socket.java:607)
+[junit-timeout] 	at java.net.Socket.connect(Socket.java:556)
+[junit-timeout] 	at java.net.Socket.<init>(Socket.java:452)
+[junit-timeout] 	at java.net.Socket.<init>(Socket.java:229)
+[junit-timeout] 	at org.jboss.byteman.agent.submit.Submit$Comm.<init>(Submit.java:881)
+[junit-timeout] 	at org.jboss.byteman.agent.submit.Submit.submitRequest(Submit.java:787)
+[junit-timeout] 	at org.jboss.byteman.agent.submit.Submit.deleteScripts(Submit.java:697)
+[junit-timeout] 	at org.jboss.byteman.contrib.bmunit.BMUnit.unloadScriptText(BMUnit.java:295)
+[junit-timeout] 	at org.jboss.byteman.contrib.bmunit.BMUnitRunner$9.evaluate(BMUnitRunner.java:344)
+[junit-timeout] 	at org.jboss.byteman.contrib.bmunit.BMUnitRunner$6.evaluate(BMUnitRunner.java:241)
+[junit-timeout] 	at org.jboss.byteman.contrib.bmunit.BMUnitRunner$1.evaluate(BMUnitRunner.java:75)
+[junit-timeout] 
+[junit-timeout] 
+[junit-timeout] Test org.apache.cassandra.db.commitlog.CommitLogSegmentBackpressureTest FAILED
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:147
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:147
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:147
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogFailurePolicyTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.379 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitlogShutdownTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogUpgradeTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.837 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:149
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:149
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:149
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.SnapshotDeletingTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:146
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:146
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:146
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.AntiCompactionTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitlogShutdownTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.204 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:150
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:150
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:150
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.SnapshotDeletingTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.193 sec
+[junit-timeout] 
+[junit-timeout] Testcase: testCompactionHook(org.apache.cassandra.db.commitlog.SnapshotDeletingTest):SKIPPED: got: <false>, expected: is <true>
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:151
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:151
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:151
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.BlacklistingCompactionsTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionAwareWriterTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.RepairedDataTombstonesTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.9 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:125
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:125
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:125
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionControllerTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogDescriptorTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.394 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.BlacklistingCompactionsTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.998 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionControllerTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.37 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:153
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:153
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:155
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:155
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:155
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:153
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionExecutorTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionsBytemanTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionsCQLTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionExecutorTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.743 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionsPurgeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionsPurgeTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.697 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:159
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:159
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:159
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionsTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionsBytemanTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.772 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:157
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:157
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:157
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.DateTieredCompactionStrategyTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.commitlog.CommitLogTest Tests run: 108, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.651 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:148
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:148
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:148
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.LeveledCompactionStrategyTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.DateTieredCompactionStrategyTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.673 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:161
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:161
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:161
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.NeverPurgeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.AntiCompactionTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.82 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:152
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:152
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:152
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionAwareWriterTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.862 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:154
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:154
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.OneCompactionTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:154
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.SizeTieredCompactionStrategyTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.OneCompactionTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.93 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.LeveledCompactionStrategyTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.187 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:162
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:162
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:164
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:164
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:164
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:162
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.SizeTieredCompactionStrategyTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.665 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:165
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:165
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:165
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.TTLExpiryTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.TimeWindowCompactionStrategyTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.composites.CTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionsTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 18.515 sec
+[junit-timeout] 
+[junit-timeout] Testcase: testNeedsCleanup(org.apache.cassandra.db.compaction.CompactionsTest):SKIPPED: making ranges based on the keys, not on the tokens
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:160
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:160
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:160
+[junit-timeout] Testsuite: org.apache.cassandra.db.composites.CTypeTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.context.CounterContextTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.filter.ColumnFilterTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.filter.ColumnFilterTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.531 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.NeverPurgeTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.373 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:163
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:163
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.CompactionsCQLTest Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.353 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:158
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:158
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:163
+[junit-timeout] Testsuite: org.apache.cassandra.db.filter.SliceTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:158
+[junit-timeout] Testsuite: org.apache.cassandra.db.filter.SliceTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.context.CounterContextTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.63 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:169
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:169
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:169
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.HelpersTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.LifecycleTransactionTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.LogTransactionTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.RealTransactionsTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.LifecycleTransactionTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.982 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:173
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:173
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:173
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.TrackerTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.LogTransactionTest Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.591 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:174
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:174
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:174
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.ViewTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.TimeWindowCompactionStrategyTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.138 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:167
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:167
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:167
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.RealTransactionsTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.342 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:175
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:175
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:175
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.BytesTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.CollectionTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.BytesTypeTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.CollectionTypeTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.TrackerTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.039 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:176
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:176
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:176
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.ViewTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.484 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:177
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:177
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:177
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.CompositeTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.DecimalTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.DynamicCompositeTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.DecimalTypeTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.IntegerTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.IntegerTypeTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.297 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.JsonConversionTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.ReversedTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.compaction.TTLExpiryTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.235 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:166
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:166
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.ReversedTypeTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.261 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:166
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.JsonConversionTest Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.722 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.SimpleDateTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.RoundTripTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TimeTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.CompositeTypeTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.301 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:180
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:180
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:180
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.SimpleDateTypeTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.RoundTripTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.DynamicCompositeTypeTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.295 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:182
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:182
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:182
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TimeUUIDTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.lifecycle.HelpersTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.782 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TypeCompareTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:172
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:172
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TypeParserTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TypeCompareTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TypeValidationTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:172
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TypeParserTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.UUIDTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TypeValidationTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.65 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.partition.PartitionImplementationTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.partition.PartitionUpdateTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.partitions.PurgeFunctionTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TimeTypeTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.733 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:188
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:188
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:188
+[junit-timeout] Testsuite: org.apache.cassandra.db.partitions.PurgeFunctionTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.791 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.AbstractTypeVersionComparatorTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.AbstractTypeVersionComparatorTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.DigestBackwardCompatibilityTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.RowAndDeletionMergeIteratorTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.partition.PartitionUpdateTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.986 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:195
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:195
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:195
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.RowsTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.RowsTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.RowAndDeletionMergeIteratorTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.308 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:199
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:199
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:199
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.UUIDTypeTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.934 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.UnfilteredRowIteratorsTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.UnfilteredRowIteratorsMergeTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.transform.RTTransformationsTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.UnfilteredRowIteratorsTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.816 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.transform.RTTransformationsTest Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.803 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.DigestBackwardCompatibilityTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.304 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:198
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:198
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:198
+[junit-timeout] Testsuite: org.apache.cassandra.db.view.ViewUtilsTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.BootStrapperTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.BoundsTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.BoundsTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.dht.ByteOrderedPartitionerTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.view.ViewUtilsTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.249 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:204
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:204
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:204
+[junit-timeout] Testsuite: org.apache.cassandra.dht.KeyCollisionTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.ByteOrderedPartitionerTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.804 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:207
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:207
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:207
+[junit-timeout] Testsuite: org.apache.cassandra.dht.Murmur3PartitionerTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.KeyCollisionTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.244 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:208
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:208
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:208
+[junit-timeout] Testsuite: org.apache.cassandra.db.marshal.TimeUUIDTypeTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.715 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.dht.OrderPreservingPartitionerTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.Murmur3PartitionerTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.256 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.dht.RandomPartitionerTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.BootStrapperTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.684 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:205
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:205
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:205
+[junit-timeout] Testsuite: org.apache.cassandra.dht.RangeTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.StreamStateStoreTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.RandomPartitionerTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.376 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.dht.OrderPreservingPartitionerTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.089 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:210
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:210
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:210
+[junit-timeout] Testsuite: org.apache.cassandra.gms.ArrayBackedBoundedStatsTest
+[junit-timeout] Testsuite: org.apache.cassandra.gms.ArrayBackedBoundedStatsTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.gms.ArrivalWindowTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.StreamStateStoreTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.533 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:213
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:213
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:213
+[junit-timeout] Testsuite: org.apache.cassandra.gms.EndpointStateTest
+[junit-timeout] Testsuite: org.apache.cassandra.gms.ArrivalWindowTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.gms.FailureDetectorTest
+[junit-timeout] Testsuite: org.apache.cassandra.gms.GossipDigestTest
+[junit-timeout] Testsuite: org.apache.cassandra.gms.EndpointStateTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.228 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.gms.GossipDigestTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.644 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.gms.GossiperTest
+[junit-timeout] Testsuite: org.apache.cassandra.gms.PendingRangeCalculatorServiceTest
+[junit-timeout] Testsuite: org.apache.cassandra.gms.FailureDetectorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.712 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:217
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:217
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:217
+[junit-timeout] Testsuite: org.apache.cassandra.gms.SerializationsTest
+[junit-timeout] Testsuite: org.apache.cassandra.gms.GossiperTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.527 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:219
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:219
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:219
+[junit-timeout] Testsuite: org.apache.cassandra.gms.SerializationsTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.709 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.hadoop.ColumnFamilyInputFormatTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.ChecksummedDataInputTest
+[junit-timeout] Testsuite: org.apache.cassandra.hadoop.ColumnFamilyInputFormatTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.302 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.hints.ChecksummedDataInputTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.689 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintMessageTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintTest
+[junit-timeout] Testsuite: org.apache.cassandra.gms.PendingRangeCalculatorServiceTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.478 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintMessageTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.113 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:224
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:224
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:224
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsBufferPoolTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.483 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:225
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:225
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:225
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:220
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:220
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:220
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsBufferTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsCatalogTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsBufferPoolTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.716 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:226
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:226
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:226
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsCatalogTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.257 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:228
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:228
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:228
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsCompressionTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsDescriptorTest
+[junit-timeout] Testsuite: org.apache.cassandra.dht.RangeTest Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.274 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsDescriptorTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.55 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsReaderTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsServiceTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsBufferTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.315 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:227
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:227
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:227
+[junit-timeout] Testsuite: org.apache.cassandra.hints.LegacyHintsMigratorTest
+[junit-timeout] Testsuite: org.apache.cassandra.db.rows.UnfilteredRowIteratorsMergeTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.176 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.index.CustomIndexTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsReaderTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.811 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:231
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:231
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:231
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsCompressionTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.139 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:229
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:229
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:229
+[junit-timeout] Testsuite: org.apache.cassandra.index.internal.CassandraIndexTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.BloomFilterTrackerTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.BloomFilterTrackerTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.compress.CompressedRandomAccessReaderTest
+[junit-timeout] Testsuite: org.apache.cassandra.hints.LegacyHintsMigratorTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.925 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:233
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:233
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:233
+[junit-timeout] Testsuite: org.apache.cassandra.io.compress.CompressedSequentialWriterReopenTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.compress.CompressedRandomAccessReaderTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.765 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.compress.CompressedSequentialWriterTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.compress.CompressedSequentialWriterTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.978 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.compress.CompressorTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.compress.CompressorTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.555 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.BigTableWriterTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.BigTableWriterTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.893 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:241
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:241
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:241
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.CQLSSTableWriterClientTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.compress.CompressedSequentialWriterReopenTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.775 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:238
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:238
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:238
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.CQLSSTableWriterClientTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.265 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.CQLSSTableWriterTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.DescriptorTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.DescriptorTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.698 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.IndexHelperTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.IndexHelperTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.IndexSummaryManagerTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.CQLSSTableWriterTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.974 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.db.partition.PartitionImplementationTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.457 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:194
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:194
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:194
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.IndexSummaryRedistributionTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:243
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:243
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:243
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.IndexSummaryManagerTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.277 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:246
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:246
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:246
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.IndexSummaryTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.LegacySSTableTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.IndexSummaryRedistributionTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.059 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:247
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:247
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:247
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableCorruptionDetectionTest
+[junit-timeout] Testsuite: org.apache.cassandra.index.CustomIndexTest Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.248 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:234
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:234
+[junit-timeout] Testsuite: org.apache.cassandra.index.internal.CassandraIndexTest Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.151 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:235
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:235
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:234
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:235
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableLoaderTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableMetadataTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableMetadataTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.766 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:252
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:252
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:252
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableReaderTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableLoaderTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.925 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableReaderTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.103 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:253
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:253
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:253
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableRewriterTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:251
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:251
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:251
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableScannerTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableScannerTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.685 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:255
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:255
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:255
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableWriterTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.LegacySSTableTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 31.313 sec
+[junit-timeout] 
+[junit-timeout] Testcase: testGenerateSstables(org.apache.cassandra.io.sstable.LegacySSTableTest):SKIPPED
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.IndexSummaryTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.942 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:249
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:249
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:249
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.format.ClientModeSSTableTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.metadata.MetadataSerializerTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.format.ClientModeSSTableTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.metadata.MetadataSerializerTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.988 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.BufferedDataOutputStreamTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.BufferedRandomAccessFileTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.BufferedRandomAccessFileTest Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.66 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.ChecksummedRandomAccessReaderTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.ChecksummedRandomAccessReaderTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.748 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.ChecksummedSequentialWriterTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.ChecksummedSequentialWriterTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.DataOutputTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.DataOutputTest Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.71 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.FileSegmentInputStreamTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.FileSegmentInputStreamTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.FileUtilsTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.FileUtilsTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.MemoryTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.MemoryTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.MmappedRegionsTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.MmappedRegionsTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.926 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.NIODataInputStreamTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableRewriterTest Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.646 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:254
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:254
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:254
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.RandomAccessReaderTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.RandomAccessReaderTest Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.889 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.RewindableDataInputStreamPlusTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.RewindableDataInputStreamPlusTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.SafeMemoryWriterTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.SafeMemoryWriterTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.942 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.SegmentedFileTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.SegmentedFileTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.NIODataInputStreamTest Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.218 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.SequentialWriterTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.CloudstackSnitchTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.SequentialWriterTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.592 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.locator.DynamicEndpointSnitchTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.DynamicEndpointSnitchTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.805 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.locator.EC2SnitchTest
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableCorruptionDetectionTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.482 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:250
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:250
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:250
+[junit-timeout] Testsuite: org.apache.cassandra.io.sstable.SSTableWriterTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.966 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:256
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:256
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:256
+[junit-timeout] Testsuite: org.apache.cassandra.locator.GoogleCloudSnitchTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.GossipingPropertyFileSnitchTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.GossipingPropertyFileSnitchTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.locator.NetworkTopologyStrategyTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.NetworkTopologyStrategyTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.684 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.locator.OldNetworkTopologyStrategyTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.CloudstackSnitchTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.715 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:274
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:274
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:274
+[junit-timeout] Testsuite: org.apache.cassandra.locator.OldNetworkTopologyStrategyTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.locator.PendingRangeMapsTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.PropertyFileSnitchTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.PendingRangeMapsTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.385 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.locator.EC2SnitchTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.472 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:276
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:276
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:276
+[junit-timeout] Testsuite: org.apache.cassandra.locator.ReplicationStrategyEndpointCacheTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.SimpleStrategyTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.GoogleCloudSnitchTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.415 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:277
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:277
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:277
+[junit-timeout] Testsuite: org.apache.cassandra.locator.TokenMetadataTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.ReplicationStrategyEndpointCacheTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.116 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:283
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:283
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:283
+[junit-timeout] Testsuite: org.apache.cassandra.locator.SimpleStrategyTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.086 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:284
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:284
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:284
+[junit-timeout] Testsuite: org.apache.cassandra.locator.TokenMetadataTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.762 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.metrics.CQLMetricsTest
+[junit-timeout] Testsuite: org.apache.cassandra.metrics.DecayingEstimatedHistogramReservoirTest
+[junit-timeout] Testsuite: org.apache.cassandra.metrics.HintedHandOffMetricsTest
+[junit-timeout] Testsuite: org.apache.cassandra.metrics.HintedHandOffMetricsTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.37 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:288
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:288
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:288
+[junit-timeout] Testsuite: org.apache.cassandra.metrics.LatencyMetricsTest
+[junit-timeout] Testsuite: org.apache.cassandra.metrics.LatencyMetricsTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.io.util.BufferedDataOutputStreamTest Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.559 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.net.MessagingServiceTest
+[junit-timeout] Testsuite: org.apache.cassandra.net.MockMessagingServiceTest
+[junit-timeout] Testsuite: org.apache.cassandra.net.MessagingServiceTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.net.OutboundTcpConnectionTest
+[junit-timeout] Testsuite: org.apache.cassandra.net.OutboundTcpConnectionTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.378 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:292
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:292
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:292
+[junit-timeout] Testsuite: org.apache.cassandra.net.WriteCallbackInfoTest
+[junit-timeout] Testsuite: org.apache.cassandra.net.MockMessagingServiceTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.817 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.net.WriteCallbackInfoTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.842 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:293
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:293
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:293
+[junit-timeout] Testsuite: org.apache.cassandra.metrics.DecayingEstimatedHistogramReservoirTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.775 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.repair.LocalSyncTaskTest
+[junit-timeout] Testsuite: org.apache.cassandra.repair.RepairSessionTest
+[junit-timeout] Testsuite: org.apache.cassandra.metrics.CQLMetricsTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.892 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.repair.RepairSessionTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.816 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:291
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:291
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:291
+[junit-timeout] Testsuite: org.apache.cassandra.repair.ValidatorTest
+[junit-timeout] Testsuite: org.apache.cassandra.repair.messages.RepairMessageSerializationsTest
+[junit-timeout] Testsuite: org.apache.cassandra.repair.messages.RepairMessageSerializationsTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.663 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.repair.messages.RepairOptionTest
+[junit-timeout] Testsuite: org.apache.cassandra.repair.LocalSyncTaskTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.941 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:294
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:294
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:294
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:286
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:286
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:286
+[junit-timeout] Testsuite: org.apache.cassandra.repair.messages.RepairOptionTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.626 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.schema.CreateTableValidationTest
+[junit-timeout] Testsuite: org.apache.cassandra.schema.DefsTest
+[junit-timeout] Testsuite: org.apache.cassandra.schema.LegacySchemaMigratorTest
+[junit-timeout] Testsuite: org.apache.cassandra.locator.PropertyFileSnitchTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.761 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.schema.SchemaKeyspaceTest
+[junit-timeout] Testsuite: org.apache.cassandra.schema.CreateTableValidationTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.52 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:299
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:299
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:299
+[junit-timeout] Testsuite: org.apache.cassandra.security.SSLFactoryTest
+[junit-timeout] Testsuite: org.apache.cassandra.security.SSLFactoryTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.serializers.ClientUtilsTest
+[junit-timeout] Testsuite: org.apache.cassandra.serializers.ClientUtilsTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.482 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.schema.DefsTest Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.597 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:300
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:300
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:300
+[junit-timeout] Testsuite: org.apache.cassandra.serializers.SimpleDateSerializerTest
+[junit-timeout] Testsuite: org.apache.cassandra.schema.SchemaKeyspaceTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.845 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:302
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:302
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:302
+[junit-timeout] Testsuite: org.apache.cassandra.serializers.TimeSerializerTest
+[junit-timeout] Testsuite: org.apache.cassandra.serializers.SimpleDateSerializerTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.317 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.serializers.TimeSerializerTest Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.serializers.TimestampSerializerTest
+[junit-timeout] Testsuite: org.apache.cassandra.serializers.TimestampSerializerTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.schema.LegacySchemaMigratorTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.409 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:301
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:301
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:301
+[junit-timeout] Testsuite: org.apache.cassandra.service.ActiveRepairServiceTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.ClientWarningsTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.DataResolverTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.EmbeddedCassandraServiceTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.DataResolverTest Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.216 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:310
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:310
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:310
+[junit-timeout] Testsuite: org.apache.cassandra.service.LeaveAndBootstrapTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.ActiveRepairServiceTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.06 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:308
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:308
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:308
+[junit-timeout] Testsuite: org.apache.cassandra.service.LegacyAuthFailTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.EmbeddedCassandraServiceTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.103 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.repair.ValidatorTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.158 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:296
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:296
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:296
+[junit-timeout] Testsuite: org.apache.cassandra.service.MoveTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:311
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:311
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:311
+[junit-timeout] Testsuite: org.apache.cassandra.service.NativeTransportServiceTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.LeaveAndBootstrapTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.732 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:312
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:312
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:312
+[junit-timeout] Testsuite: org.apache.cassandra.service.PaxosStateTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.LegacyAuthFailTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.925 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:313
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:313
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:313
+[junit-timeout] Testsuite: org.apache.cassandra.service.QueryPagerTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.QueryPagerTest Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.743 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:317
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:317
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:317
+[junit-timeout] Testsuite: org.apache.cassandra.service.RMIServerSocketFactoryImplTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.RMIServerSocketFactoryImplTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.service.PaxosStateTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.257 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:316
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:316
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:316
+[junit-timeout] Testsuite: org.apache.cassandra.service.RemoveTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.MoveTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.603 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:314
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:314
+[junit-timeout] Testsuite: org.apache.cassandra.service.SerializationsTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:314
+[junit-timeout] Testsuite: org.apache.cassandra.service.StartupChecksTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.SerializationsTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.686 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.service.StorageProxyTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.StorageProxyTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.793 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.service.StartupChecksTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.795 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:321
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:321
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:321
+[junit-timeout] Testsuite: org.apache.cassandra.service.NativeTransportServiceTest Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.96 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.service.StorageServiceServerTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.pager.PagingStateTest
+[junit-timeout] Testsuite: org.apache.cassandra.streaming.SessionInfoTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.pager.PagingStateTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.825 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.streaming.SessionInfoTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.streaming.StreamTransferTaskTest
+[junit-timeout] Testsuite: org.apache.cassandra.streaming.StreamingTransferTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.RemoveTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.115 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:319
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:319
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:319
+[junit-timeout] Testsuite: org.apache.cassandra.streaming.compression.CompressedInputStreamTest
+[junit-timeout] Testsuite: org.apache.cassandra.streaming.compression.CompressedInputStreamTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.807 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.streaming.StreamTransferTaskTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.469 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:326
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:326
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:326
+[junit-timeout] Testsuite: org.apache.cassandra.transport.DataTypeTest
+[junit-timeout] Testsuite: org.apache.cassandra.transport.DataTypeTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.352 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.transport.MessagePayloadTest
+[junit-timeout] Testsuite: org.apache.cassandra.transport.ProtocolErrorTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.StorageServiceServerTest Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.681 sec
+[junit-timeout] 
+[junit-timeout] Testcase: testSnapshotFailureHandler(org.apache.cassandra.service.StorageServiceServerTest):SKIPPED: got: <false>, expected: is <true>
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:323
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:323
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:323
+[junit-timeout] Testsuite: org.apache.cassandra.transport.ProtocolErrorTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.801 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.transport.SerDeserTest
+[junit-timeout] Testsuite: org.apache.cassandra.service.ClientWarningsTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.042 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.triggers.TriggerExecutorTest
+[junit-timeout] Testsuite: org.apache.cassandra.streaming.StreamingTransferTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.753 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.transport.SerDeserTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.743 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.triggers.TriggerExecutorTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.818 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.triggers.TriggersSchemaTest
+[junit-timeout] Testsuite: org.apache.cassandra.triggers.TriggersTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:309
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:309
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:309
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:327
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:327
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:327
+[junit-timeout] Testsuite: org.apache.cassandra.utils.AbstractIteratorTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.AbstractIteratorTest Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.BTreeTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.BTreeTest Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.BitSetTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.BloomFilterTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.BitSetTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.527 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.triggers.TriggersSchemaTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.054 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:334
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:334
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:334
+[junit-timeout] Testsuite: org.apache.cassandra.utils.ByteBufferUtilTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.BloomFilterTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.907 sec
+[junit-timeout] 
+[junit-timeout] Testcase: testManyRandom(org.apache.cassandra.utils.BloomFilterTest):SKIPPED
+[junit-timeout] Testcase: testHugeBFSerialization(org.apache.cassandra.utils.BloomFilterTest):SKIPPED
+[junit-timeout] Testsuite: org.apache.cassandra.utils.ByteBufferUtilTest Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.BytesReadTrackerTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.BytesReadTrackerTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.CassandraVersionTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.CassandraVersionTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.CoalescingStrategiesTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.EstimatedHistogramTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.EstimatedHistogramTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.FBUtilitiesTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.FastByteOperationsTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.FBUtilitiesTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.63 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.CoalescingStrategiesTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.183 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.triggers.TriggersTest Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.097 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.HexTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.HexTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.HistogramBuilderTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.HistogramBuilderTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.IntegerIntervalsTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.IntervalTreeTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.IntervalTreeTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.JVMStabilityInspectorTest
+[junit-timeout] Testsuite: org.apache.cassandra.transport.MessagePayloadTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.953 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.JVMStabilityInspectorTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.678 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:335
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:335
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:335
+[junit-timeout] Testsuite: org.apache.cassandra.utils.JavaUtilsTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.MergeIteratorComparisonTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.JavaUtilsTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.MergeIteratorTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.MergeIteratorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.MerkleTreeTest
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:330
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:330
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:330
+[junit-timeout] Testsuite: org.apache.cassandra.utils.MerkleTreesTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.MerkleTreeTest Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.634 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.FastByteOperationsTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.616 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.NanoTimeToCurrentTimeMillisTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.MerkleTreesTest Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.794 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.NativeLibraryTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.NoSpamLoggerTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.NativeLibraryTest Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.436 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.NoSpamLoggerTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.OverlapIteratorTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.SerializationsTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.SerializationsTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.612 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.StreamingHistogramTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.StreamingHistogramTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.TopKSamplerTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.TopKSamplerTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.013 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.concurrent.AbstractTransactionalTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.concurrent.AbstractTransactionalTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.053 sec
+[junit-timeout] 
+[junit-timeout] Testcase: org.apache.cassandra.utils.concurrent.AbstractTransactionalTest:SKIPPED
+[junit-timeout] Testsuite: org.apache.cassandra.utils.NanoTimeToCurrentTimeMillisTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.516 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.concurrent.AccumulatorTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.concurrent.AccumulatorTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.concurrent.RefCountedTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.memory.BufferPoolTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.MergeIteratorComparisonTest Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.076 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.memory.NativeAllocatorTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.memory.NativeAllocatorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.progress.jmx.LegacyJMXProgressSupportTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.progress.jmx.LegacyJMXProgressSupportTest Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.vint.VIntCodingTest
+[junit-timeout] Testsuite: org.apache.cassandra.utils.vint.VIntCodingTest Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.OverlapIteratorTest Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.212 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.concurrent.RefCountedTest Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.176 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.utils.memory.BufferPoolTest Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.297 sec
+[junit-timeout] 
+[junit-timeout] Testsuite: org.apache.cassandra.hints.HintsServiceTest Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 165.164 sec
+[junit-timeout] 
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/commitlog:232
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/data:232
+   [delete] Deleting directory /users/miaoyu/cassandra/build/test/cassandra/saved_caches:232
+[junit-timeout] Testsuite: org.apache.cassandra.utils.IntegerIntervalsTest Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 63.628 sec
+[junit-timeout] 
+[junitreport] Processing /users/miaoyu/cassandra/build/test/TESTS-TestSuites.xml to /tmp/null663906952
+[junitreport] Loading stylesheet jar:file:/usr/share/ant/lib/ant-junit.jar!/org/apache/tools/ant/taskdefs/optional/junit/xsl/junit-frames.xsl
+[junitreport] Transform time: 2695ms
+[junitreport] Deleting: /tmp/null663906952
+
+BUILD FAILED
+/users/miaoyu/cassandra/build.xml:1734: The following error occurred while executing this line:
+/users/miaoyu/cassandra/build.xml:1635: Some test(s) failed.
+
+Total time: 9 minutes 5 seconds

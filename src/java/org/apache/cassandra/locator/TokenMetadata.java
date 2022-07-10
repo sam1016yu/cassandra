@@ -657,6 +657,7 @@ public class TokenMetadata
      */
     public TokenMetadata cachedOnlyTokenMap()
     {
+        logger.warn("COVERAGE CHECK|ca14660|cachedOnlyTokenMap");
         TokenMetadata tm = cachedTokenMap.get();
         if (tm != null)
             return tm;
@@ -834,6 +835,7 @@ public class TokenMetadata
             Set<Pair<Token, InetAddress>> movingEndpointsClone;
             TokenMetadata metadata;
 
+            logger.warn("COVERAGE CHECK|ca12281|calculatePendingRanges");
             lock.readLock().lock();
             try
             {
