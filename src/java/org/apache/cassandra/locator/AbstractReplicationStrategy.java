@@ -221,6 +221,7 @@ public abstract class AbstractReplicationStrategy
      */
     public RangesByEndpoint getAddressReplicas(TokenMetadata metadata)
     {
+        logger.warn("COVERAGE CHECK|ca15141|getAddressReplicas");
         RangesByEndpoint.Builder map = new RangesByEndpoint.Builder();
 
         for (Token token : metadata.sortedTokens())
