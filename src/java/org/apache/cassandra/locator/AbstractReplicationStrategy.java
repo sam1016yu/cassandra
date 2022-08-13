@@ -258,6 +258,7 @@ public abstract class AbstractReplicationStrategy
 
     public EndpointsByRange getRangeAddresses(TokenMetadata metadata)
     {
+        logger.warn("COVERAGE CHECK|ca17691|getRangeAddresses");
         EndpointsByRange.Builder map = new EndpointsByRange.Builder();
 
         for (Token token : metadata.sortedTokens())
