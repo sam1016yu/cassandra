@@ -1112,6 +1112,7 @@ public class StorageProxy implements StorageProxyMBean
             // add a handler for each mutation - includes checking availability, but doesn't initiate any writes, yet
             for (Mutation mutation : mutations)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/service/StorageProxy.java@1113");
                 WriteResponseHandlerWrapper wrapper = wrapBatchResponseHandler(mutation,
                                                                                consistency_level,
                                                                                batchConsistencyLevel,
@@ -1241,6 +1242,7 @@ public class StorageProxy implements StorageProxyMBean
 
         for (WriteResponseHandlerWrapper wrapper : wrappers)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/service/StorageProxy.java@1242");
             EndpointsForToken sendTo = wrapper.handler.replicaPlan.liveAndDown();
             Replicas.temporaryAssertFull(sendTo); // TODO: CASSANDRA-14549
             sendToHintedReplicas(wrapper.mutation, wrapper.handler.replicaPlan.withContact(sendTo), wrapper.handler, localDataCenter, stage);
@@ -1248,6 +1250,7 @@ public class StorageProxy implements StorageProxyMBean
 
         for (WriteResponseHandlerWrapper wrapper : wrappers)
             wrapper.handler.get();
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/service/StorageProxy.java@1249");
     }
 
     /**

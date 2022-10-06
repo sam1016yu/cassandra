@@ -776,6 +776,7 @@ public class SelectStatement implements CQLStatement
 
         while (partitions.hasNext())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/statements/SelectStatement.java@777");
             try (RowIterator partition = partitions.next())
             {
                 processPartition(partition, options, result, nowInSec);

@@ -17,6 +17,8 @@
  * under the License.
  */
 package org.apache.cassandra.utils.btree;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 import java.util.function.BiConsumer;
@@ -42,6 +44,7 @@ import static java.util.Comparator.naturalOrder;
 
 public class BTree
 {
+public static final Logger logger = LoggerFactory.getLogger(BTree.class);
     /**
      * Leaf Nodes are a raw array of values: Object[V1, V1, ...,].
      *
@@ -220,6 +223,7 @@ public class BTree
         int index = 0;
         for (int i = 0; i < childNum - 1; i++)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/utils/btree/BTree.java@221");
             // Calculate the next childSize by splitting the remaining values to the remaining child nodes.
             // The performance could be improved by pre-compute the childSize (see #9989 comments).
             int childSize = (size - index) / (childNum - i);
@@ -1200,6 +1204,7 @@ public class BTree
                 int prev = 0;
                 for (int i = 1 ; i < count ; i++)
                 {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/utils/btree/BTree.java@1201");
                     if (comparator.compare((V) values[i], (V) values[prev]) != 0)
                     {
                         values[c++] = resolver.resolve((V[]) values, prev, i);
@@ -1415,6 +1420,7 @@ public class BTree
         int limit = btree.length - 1 - childOffset;
         for (int i=startChild; i<limit; i++)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/utils/btree/BTree.java@1416");
             value = accumulate((Object[]) btree[childOffset + i], accumulator, arg, comparator, from, value);
 
             if (isStopSentinel(value))

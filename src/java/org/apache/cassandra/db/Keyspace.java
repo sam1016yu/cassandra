@@ -252,6 +252,7 @@ public class Keyspace
         boolean tookSnapShot = false;
         for (ColumnFamilyStore cfStore : columnFamilyStores.values())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/Keyspace.java@253");
             if (columnFamilyName == null || cfStore.name.equals(columnFamilyName))
             {
                 tookSnapShot = true;
@@ -306,6 +307,7 @@ public class Keyspace
         assert snapshotName != null;
         for (ColumnFamilyStore cfStore : columnFamilyStores.values())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/Keyspace.java@307");
             if (cfStore.snapshotExists(snapshotName))
                 return true;
         }
@@ -704,6 +706,7 @@ public class Keyspace
             // all stores are interesting
             for (ColumnFamilyStore cfStore : getColumnFamilyStores())
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/Keyspace.java@705");
                 valid.add(cfStore);
                 if (autoAddIndexes)
                     valid.addAll(getIndexColumnFamilyStores(cfStore));

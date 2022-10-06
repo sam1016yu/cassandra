@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db.rows;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
@@ -92,6 +94,7 @@ import org.apache.cassandra.utils.WrappedException;
  */
 public class UnfilteredSerializer
 {
+public static final Logger logger = LoggerFactory.getLogger(UnfilteredSerializer.class);
     public static final UnfilteredSerializer serializer = new UnfilteredSerializer();
 
     /*
@@ -273,6 +276,7 @@ public class UnfilteredSerializer
         out.writeUnsignedVInt(data.cellsCount());
         for (Cell<?> cell : data)
             Cell.serializer.serialize(cell, column, out, rowLiveness, header);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/rows/UnfilteredSerializer.java@274");
     }
 
     private void serialize(RangeTombstoneMarker marker, SerializationHelper helper, DataOutputPlus out, long previousUnfilteredSize, int version)
@@ -375,6 +379,7 @@ public class UnfilteredSerializer
         size += TypeSizes.sizeofUnsignedVInt(data.cellsCount());
         for (Cell<?> cell : data)
             size += Cell.serializer.serializedSize(cell, column, rowLiveness, header);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/rows/UnfilteredSerializer.java@376");
 
         return size;
     }

@@ -145,6 +145,7 @@ public class BatchlogManager implements BatchlogManagerMBean
 
         for (Mutation mutation : batch.decodedMutations)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/batchlog/BatchlogManager.java@146");
             try (DataOutputBuffer buffer = new DataOutputBuffer())
             {
                 Mutation.serializer.serialize(mutation, buffer, MessagingService.current_version);

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.utils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Collection;
 import java.util.SortedMap;
@@ -26,6 +28,7 @@ import com.google.common.collect.TreeMultimap;
 
 public class SortedBiMultiValMap<K, V> extends BiMultiValMap<K, V>
 {
+public static final Logger logger = LoggerFactory.getLogger(SortedBiMultiValMap.class);
     protected SortedBiMultiValMap(SortedMap<K, V> forwardMap, SortedSetMultimap<V, K> reverseMap)
     {
         super(forwardMap, reverseMap);
@@ -44,6 +47,7 @@ public class SortedBiMultiValMap<K, V> extends BiMultiValMap<K, V>
         // See CASSANDRA-14660
         for (Entry<V, Collection<K>> entry : map.inverse().asMap().entrySet())
             newMap.reverseMap.putAll(entry.getKey(), entry.getValue());
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/utils/SortedBiMultiValMap.java@45");
         return newMap;
     }
 

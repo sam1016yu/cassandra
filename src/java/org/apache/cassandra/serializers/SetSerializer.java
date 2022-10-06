@@ -17,6 +17,8 @@
  */
 
 package org.apache.cassandra.serializers;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
@@ -35,6 +37,7 @@ import org.apache.cassandra.utils.ByteBufferUtil;
 
 public class SetSerializer<T> extends CollectionSerializer<Set<T>>
 {
+public static final Logger logger = LoggerFactory.getLogger(SetSerializer.class);
     // interning instances
     private static final ConcurrentMap<TypeSerializer<?>, SetSerializer> instances = new ConcurrentHashMap<TypeSerializer<?>, SetSerializer>();
 
@@ -60,6 +63,7 @@ public class SetSerializer<T> extends CollectionSerializer<Set<T>>
         List<ByteBuffer> buffers = new ArrayList<>(values.size());
         for (T value : values)
             buffers.add(elements.serialize(value));
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/serializers/SetSerializer.java@61");
         Collections.sort(buffers, comparators.buffer);
         return buffers;
     }
@@ -111,6 +115,7 @@ public class SetSerializer<T> extends CollectionSerializer<Set<T>>
 
             for (int i = 0; i < n; i++)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/serializers/SetSerializer.java@112");
                 V value = readValue(input, accessor, offset, version);
                 offset += sizeOfValue(value, accessor, version);
                 elements.validate(value, accessor);

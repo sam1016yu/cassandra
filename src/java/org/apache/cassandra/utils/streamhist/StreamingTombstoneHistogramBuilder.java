@@ -17,6 +17,8 @@
  */
 
 package org.apache.cassandra.utils.streamhist;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.RoundingMode;
 import java.util.Arrays;
@@ -65,6 +67,7 @@ import org.apache.cassandra.db.rows.Cell;
  */
 public class StreamingTombstoneHistogramBuilder
 {
+public static final Logger logger = LoggerFactory.getLogger(StreamingTombstoneHistogramBuilder.class);
     // Buffer with point-value pair
     private final DataHolder bin;
 
@@ -333,6 +336,7 @@ public class StreamingTombstoneHistogramBuilder
         {
             for (long datum : data)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/utils/streamhist/StreamingTombstoneHistogramBuilder.java@334");
                 if (datum == EMPTY)
                 {
                     break;

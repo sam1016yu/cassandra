@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.net;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -58,6 +60,7 @@ import static org.apache.cassandra.utils.ByteBufferUtil.copyBytes;
  */
 public abstract class FrameDecoder extends ChannelInboundHandlerAdapter
 {
+public static final Logger logger = LoggerFactory.getLogger(FrameDecoder.class);
     private static final FrameProcessor NO_PROCESSOR =
         frame -> { throw new IllegalStateException("Frame processor invoked on an unregistered FrameDecoder"); };
 
@@ -317,6 +320,7 @@ public abstract class FrameDecoder extends ChannelInboundHandlerAdapter
         boolean deliver = true;
         while (deliver && !frames.isEmpty())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/net/FrameDecoder.java@318");
             Frame frame = frames.peek();
             deliver = processor.process(frame);
 

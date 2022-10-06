@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.cql3.statements;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -40,6 +42,7 @@ import org.apache.cassandra.schema.TableMetadata;
  */
 final class SingleTableUpdatesCollector implements UpdatesCollector
 {
+public static final Logger logger = LoggerFactory.getLogger(SingleTableUpdatesCollector.class);
     /**
      * the table to be updated
      */
@@ -95,6 +98,7 @@ final class SingleTableUpdatesCollector implements UpdatesCollector
         List<IMutation> ms = new ArrayList<>(puBuilders.size());
         for (PartitionUpdate.Builder builder : puBuilders.values())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/statements/SingleTableUpdatesCollector.java@96");
             IMutation mutation;
 
             if (metadata.isVirtual())

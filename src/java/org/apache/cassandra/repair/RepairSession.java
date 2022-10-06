@@ -294,6 +294,7 @@ public class RepairSession extends AbstractFuture<RepairSessionResult> implement
         List<ListenableFuture<RepairResult>> jobs = new ArrayList<>(cfnames.length);
         for (String cfname : cfnames)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/repair/RepairSession.java@295");
             RepairJob job = new RepairJob(this, cfname);
             executor.execute(job);
             jobs.add(job);

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.batchlog;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -36,6 +38,7 @@ import static org.apache.cassandra.db.TypeSizes.sizeofUnsignedVInt;
 
 public final class Batch
 {
+public static final Logger logger = LoggerFactory.getLogger(Batch.class);
     public static final Serializer serializer = new Serializer();
 
     public final UUID id;
@@ -155,6 +158,7 @@ public final class Batch
             ArrayList<ByteBuffer> mutations = new ArrayList<>(count);
             for (int i = 0; i < count; i++)
                 mutations.add(ByteBufferUtil.readWithVIntLength(in));
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/batchlog/Batch.java@156");
 
             return mutations;
         }

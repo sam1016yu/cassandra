@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.io.compress;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -64,6 +66,7 @@ import org.apache.cassandra.utils.concurrent.Ref;
  */
 public class CompressionMetadata
 {
+public static final Logger logger = LoggerFactory.getLogger(CompressionMetadata.class);
     // dataLength can represent either the true length of the file
     // or some shorter value, in the case we want to impose a shorter limit on readers
     // (when early opening, we want to ensure readers cannot read past fully written sections)
@@ -418,6 +421,7 @@ public class CompressionMetadata
                 writeHeader(out, dataLength, count);
                 for (int i = 0; i < count; i++)
                     out.writeLong(offsets.getLong(i * 8L));
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/io/compress/CompressionMetadata.java@419");
 
                 out.flush();
                 SyncUtil.sync(fos);

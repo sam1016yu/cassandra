@@ -17,6 +17,8 @@
  * under the License.
  */
 package org.apache.cassandra.utils.btree;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import org.apache.cassandra.utils.ObjectSizes;
 
@@ -30,6 +32,7 @@ import static org.apache.cassandra.utils.btree.BTree.*;
  */
 final class NodeBuilder
 {
+public static final Logger logger = LoggerFactory.getLogger(NodeBuilder.class);
     private static final int MAX_KEYS = 1 + (FAN_FACTOR * 2);
 
     // parent stack
@@ -399,6 +402,7 @@ final class NodeBuilder
             int size = BTree.size((Object[]) a[keyLength]);
             for (int i = 0 ; i < keyLength ; i++)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/utils/btree/NodeBuilder.java@400");
                 indexOffsets[i] = size;
                 size += 1 + BTree.size((Object[]) a[keyLength + 1 + i]);
             }

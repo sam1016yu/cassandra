@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db.rows;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 
@@ -65,6 +67,7 @@ import org.apache.cassandra.utils.btree.UpdateFunction;
  */
 public class BTreeRow extends AbstractRow
 {
+public static final Logger logger = LoggerFactory.getLogger(BTreeRow.class);
     private static final long EMPTY_SIZE = ObjectSizes.measure(emptyRow(Clustering.EMPTY));
 
     private final Clustering<?> clustering;
@@ -182,6 +185,7 @@ public class BTreeRow extends AbstractRow
         int min = minDeletionTime(cd.complexDeletion());
         for (Cell<?> cell : cd)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/rows/BTreeRow.java@183");
             min = Math.min(min, minDeletionTime(cell));
             if (min == Integer.MIN_VALUE)
                 break;
@@ -703,6 +707,7 @@ public class BTreeRow extends AbstractRow
                 Cell<?> previous = null;
                 for (int i = lb; i < ub; i++)
                 {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/rows/BTreeRow.java@704");
                     Cell<?> c = (Cell<?>) cells[i];
 
                     if (deletion == DeletionTime.LIVE || c.timestamp() >= deletion.markedForDeleteAt())

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.util.UUID;
@@ -24,6 +26,7 @@ import org.apache.cassandra.utils.vint.VIntCoding;
 
 public final class TypeSizes
 {
+public static final Logger logger = LoggerFactory.getLogger(TypeSizes.class);
 
     private TypeSizes(){}
 
@@ -50,6 +53,7 @@ public final class TypeSizes
         int utflen = 0;
         for (int i = 0; i < strlen; i++)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/TypeSizes.java@51");
             int c = st.charAt(i);
             if ((c >= 0x0001) && (c <= 0x007F))
                 utflen++;

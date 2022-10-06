@@ -214,6 +214,7 @@ public class BigTableReader extends SSTableReader
             path = in.getPath();
             while (!in.isEOF())
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/io/sstable/format/big/BigTableReader.java@215");
                 i++;
 
                 ByteBuffer indexKey = ByteBufferUtil.readWithShortLength(in);

@@ -190,6 +190,7 @@ public class CompactionTask extends AbstractCompactionTask
                     estimatedKeys = writer.estimatedKeys();
                     while (ci.hasNext())
                     {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/compaction/CompactionTask.java@191");
                         if (writer.append(ci.next()))
                             totalKeysWritten++;
 

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.io.util;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.DataOutput;
 import java.io.IOException;
@@ -37,6 +39,7 @@ import com.google.common.base.Function;
  */
 public abstract class UnbufferedDataOutputStreamPlus extends DataOutputStreamPlus
 {
+public static final Logger logger = LoggerFactory.getLogger(UnbufferedDataOutputStreamPlus.class);
     private static final byte[] zeroBytes = new byte[2];
 
     protected UnbufferedDataOutputStreamPlus()
@@ -264,6 +267,7 @@ public abstract class UnbufferedDataOutputStreamPlus extends DataOutputStreamPlu
         int maxSize = 2;
         for (int i = 0 ; i < length ; i++)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/io/util/UnbufferedDataOutputStreamPlus.java@265");
             int ch = str.charAt(i);
             if ((ch > 0) & (ch <= 127))
                 utfCount += 1;

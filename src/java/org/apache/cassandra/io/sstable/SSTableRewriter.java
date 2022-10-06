@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.io.sstable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.ref.WeakReference;
 import java.util.*;
@@ -52,6 +54,7 @@ import org.apache.cassandra.utils.concurrent.Transactional;
  */
 public class SSTableRewriter extends Transactional.AbstractTransactional implements Transactional
 {
+public static final Logger logger = LoggerFactory.getLogger(SSTableRewriter.class);
     @VisibleForTesting
     public static boolean disableEarlyOpeningForTests = false;
 
@@ -225,6 +228,7 @@ public class SSTableRewriter extends Transactional.AbstractTransactional impleme
             invalidateKeys = new ArrayList<>(cachedKeys.size());
             for (Map.Entry<DecoratedKey, RowIndexEntry> cacheKey : cachedKeys.entrySet())
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/io/sstable/SSTableRewriter.java@226");
                 invalidateKeys.add(cacheKey.getKey());
                 newReader.cacheKey(cacheKey.getKey(), cacheKey.getValue());
             }
@@ -281,6 +285,7 @@ public class SSTableRewriter extends Transactional.AbstractTransactional impleme
         {
             for (KeyCacheKey key : cacheKeys)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/io/sstable/SSTableRewriter.java@282");
                 InstrumentingCache<KeyCacheKey, ?> cache = cacheRef.get();
                 if (cache != null)
                     cache.remove(key);

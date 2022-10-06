@@ -17,6 +17,8 @@
  */
 
 package org.apache.cassandra.repair.consistent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -41,6 +43,7 @@ import static com.google.common.collect.Iterables.filter;
 
 public class SyncStatSummary
 {
+public static final Logger logger = LoggerFactory.getLogger(SyncStatSummary.class);
 
     private static class Session
     {
@@ -200,6 +203,7 @@ public class SyncStatSummary
         summaries.values().forEach(Table::calculateTotals);
         for (Table table: summaries.values())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/repair/consistent/SyncStatSummary.java@201");
             if (table.isCounter())
             {
                 continue;

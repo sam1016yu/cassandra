@@ -915,6 +915,7 @@ public final class SchemaKeyspace
         Tables.Builder tables = org.apache.cassandra.schema.Tables.builder();
         for (UntypedResultSet.Row row : query(query, keyspaceName))
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/schema/SchemaKeyspace.java@916");
             String tableName = row.getString("table_name");
             try
             {

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db.rows;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.util.Comparator;
@@ -33,6 +35,7 @@ import org.apache.cassandra.db.partitions.PartitionStatisticsCollector;
  */
 public abstract class Cells
 {
+public static final Logger logger = LoggerFactory.getLogger(Cells.class);
     private Cells() {}
 
     /**
@@ -250,6 +253,7 @@ public abstract class Cells
         long timeDelta = Long.MAX_VALUE;
         while (nextExisting != null || nextUpdate != null)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/rows/Cells.java@251");
             int cmp = nextExisting == null ? 1
                      : (nextUpdate == null ? -1
                      : comparator.compare(nextExisting.path(), nextUpdate.path()));

@@ -17,6 +17,8 @@
  */
 
 package org.apache.cassandra.io.util;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -36,6 +38,7 @@ import static org.apache.cassandra.utils.Throwables.perform;
 
 public class MmappedRegions extends SharedCloseableImpl
 {
+public static final Logger logger = LoggerFactory.getLogger(MmappedRegions.class);
     /** In a perfect world, MAX_SEGMENT_SIZE would be final, but we need to test with a smaller size */
     public static int MAX_SEGMENT_SIZE = Integer.MAX_VALUE;
 
@@ -160,6 +163,7 @@ public class MmappedRegions extends SharedCloseableImpl
 
         while (offset < metadata.dataLength)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/io/util/MmappedRegions.java@161");
             CompressionMetadata.Chunk chunk = metadata.chunkFor(offset);
 
             //Reached a new mmap boundary

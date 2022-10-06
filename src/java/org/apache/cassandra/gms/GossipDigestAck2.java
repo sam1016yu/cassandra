@@ -26,6 +26,8 @@ import org.apache.cassandra.io.IVersionedSerializer;
 import org.apache.cassandra.io.util.DataInputPlus;
 import org.apache.cassandra.io.util.DataOutputPlus;
 import org.apache.cassandra.locator.InetAddressAndPort;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.apache.cassandra.locator.InetAddressAndPort.Serializer.inetAddressAndPortSerializer;
 
@@ -52,6 +54,7 @@ public class GossipDigestAck2
 
 class GossipDigestAck2Serializer implements IVersionedSerializer<GossipDigestAck2>
 {
+    public static final Logger logger = LoggerFactory.getLogger(GossipDigestAck2Serializer.class);
     public void serialize(GossipDigestAck2 ack2, DataOutputPlus out, int version) throws IOException
     {
         out.writeInt(ack2.epStateMap.size());

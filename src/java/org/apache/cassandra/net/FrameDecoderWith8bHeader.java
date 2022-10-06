@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.net;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.util.Collection;
@@ -33,6 +35,7 @@ import net.nicoulaj.compilecommand.annotations.Inline;
  */
 abstract class FrameDecoderWith8bHeader extends FrameDecoder
 {
+public static final Logger logger = LoggerFactory.getLogger(FrameDecoderWith8bHeader.class);
     FrameDecoderWith8bHeader(BufferPoolAllocator allocator)
     {
         super(allocator);
@@ -110,6 +113,7 @@ abstract class FrameDecoderWith8bHeader extends FrameDecoder
             int limit = in.limit();
             while (begin < limit)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/net/FrameDecoderWith8bHeader.java@111");
                 int remaining = limit - begin;
                 if (remaining < headerLength)
                 {

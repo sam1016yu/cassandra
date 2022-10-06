@@ -250,6 +250,7 @@ public abstract class SSTableReader extends SSTable implements SelfRefCounted<SS
         ICardinality cardinality = null;
         for (SSTableReader sstable : sstables)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/io/sstable/format/SSTableReader.java@251");
             if (sstable.openReason == OpenReason.EARLY)
                 continue;
 

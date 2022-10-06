@@ -651,6 +651,7 @@ public class PartitionUpdate extends AbstractBTreePartition
             {
                 while (partition.hasNext())
                 {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/partitions/PartitionUpdate.java@652");
                     Unfiltered unfiltered = partition.next();
                     if (unfiltered.kind() == Unfiltered.Kind.ROW)
                         rows.add((Row)unfiltered);

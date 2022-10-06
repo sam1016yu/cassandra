@@ -165,6 +165,7 @@ public class BatchStatement implements CQLStatement
     {
         for (ModificationStatement statement : statements)
             statement.authorize(state);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/statements/BatchStatement.java@166");
     }
 
     // Validates a prepared batch statement without validating its nested statements.
@@ -191,6 +192,7 @@ public class BatchStatement implements CQLStatement
 
         for (ModificationStatement statement : statements)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/statements/BatchStatement.java@192");
             if (timestampSet && statement.isTimestampSet())
                 throw new InvalidRequestException("Timestamp must be set either on BATCH or individual statements");
 
@@ -256,6 +258,7 @@ public class BatchStatement implements CQLStatement
     {
         for (ModificationStatement statement : statements)
             statement.validate(state);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/statements/BatchStatement.java@257");
     }
 
     public List<ModificationStatement> getStatements()
@@ -277,6 +280,7 @@ public class BatchStatement implements CQLStatement
         TableMetadata metadata = statements.get(0).metadata;
         for (int i = 0, isize = statements.size(); i < isize; i++)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/statements/BatchStatement.java@278");
             ModificationStatement stmt = statements.get(i);
             if (metadata != null && !stmt.metadata.id.equals(metadata.id))
                 metadata = null;
@@ -296,6 +300,7 @@ public class BatchStatement implements CQLStatement
 
         for (int i = 0, isize = statements.size(); i < isize; i++)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/statements/BatchStatement.java@297");
             ModificationStatement statement = statements.get(i);
             if (isLogged() && statement.metadata().params.gcGraceSeconds == 0)
             {

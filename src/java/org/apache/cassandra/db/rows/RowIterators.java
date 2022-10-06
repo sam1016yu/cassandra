@@ -48,6 +48,7 @@ public abstract class RowIterators
 
         while (iterator.hasNext())
             iterator.next().digest(digest);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/rows/RowIterators.java@49");
     }
 
     /**

@@ -17,6 +17,8 @@
  */
 
 package org.apache.cassandra.serializers;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.util.Collection;
@@ -31,6 +33,7 @@ import org.apache.cassandra.utils.ByteBufferUtil;
 
 public abstract class CollectionSerializer<T> extends TypeSerializer<T>
 {
+public static final Logger logger = LoggerFactory.getLogger(CollectionSerializer.class);
     protected abstract List<ByteBuffer> serializeValues(T value);
     protected abstract int getElementCount(T value);
 
@@ -76,11 +79,13 @@ public abstract class CollectionSerializer<T> extends TypeSerializer<T>
         int size = 0;
         for (V value : values)
             size += sizeOfValue(value, accessor, version);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/serializers/CollectionSerializer.java@77");
 
         ByteBuffer result = ByteBuffer.allocate(sizeOfCollectionSize(elements, version) + size);
         writeCollectionSize(result, elements, version);
         for (V value : values)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/serializers/CollectionSerializer.java@82");
             writeValue(result, value, accessor, version);
         }
         return accessor.valueOf((ByteBuffer) result.flip());

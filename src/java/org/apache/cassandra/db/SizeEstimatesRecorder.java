@@ -70,6 +70,7 @@ public class SizeEstimatesRecorder extends SchemaChangeListener implements Runna
 
         for (Keyspace keyspace : Keyspace.nonLocalStrategy())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/SizeEstimatesRecorder.java@71");
             // In tools the call to describe_splits_ex() used to be coupled with the call to describe_local_ring() so
             // most access was for the local primary range; after creating the size_estimates table this was changed
             // to be the primary range.

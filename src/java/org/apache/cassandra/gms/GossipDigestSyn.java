@@ -25,6 +25,8 @@ import org.apache.cassandra.db.TypeSizes;
 import org.apache.cassandra.io.IVersionedSerializer;
 import org.apache.cassandra.io.util.DataInputPlus;
 import org.apache.cassandra.io.util.DataOutputPlus;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This is the first message that gets sent out as a start of the Gossip protocol in a
@@ -53,11 +55,13 @@ public class GossipDigestSyn
 
 class GossipDigestSerializationHelper
 {
+    public static final Logger logger = LoggerFactory.getLogger(GossipDigestSerializationHelper.class);
     static void serialize(List<GossipDigest> gDigestList, DataOutputPlus out, int version) throws IOException
     {
         out.writeInt(gDigestList.size());
         for (GossipDigest gDigest : gDigestList)
             GossipDigest.serializer.serialize(gDigest, out, version);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/GossipDigestSyn.java@62");
     }
 
     static List<GossipDigest> deserialize(DataInputPlus in, int version) throws IOException
@@ -66,6 +70,7 @@ class GossipDigestSerializationHelper
         List<GossipDigest> gDigests = new ArrayList<GossipDigest>(size);
         for (int i = 0; i < size; ++i)
             gDigests.add(GossipDigest.serializer.deserialize(in, version));
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/GossipDigestSyn.java@70");
         return gDigests;
     }
 
@@ -74,6 +79,7 @@ class GossipDigestSerializationHelper
         int size = TypeSizes.sizeof(digests.size());
         for (GossipDigest digest : digests)
             size += GossipDigest.serializer.serializedSize(digest, version);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/GossipDigestSyn.java@78");
         return size;
     }
 }

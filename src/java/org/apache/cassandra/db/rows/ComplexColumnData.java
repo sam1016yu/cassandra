@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db.rows;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.util.Iterator;
@@ -43,6 +45,7 @@ import org.apache.cassandra.utils.btree.BTree;
  */
 public class ComplexColumnData extends ColumnData implements Iterable<Cell<?>>
 {
+public static final Logger logger = LoggerFactory.getLogger(ComplexColumnData.class);
     static final Cell<?>[] NO_CELLS = new Cell<?>[0];
 
     private static final long EMPTY_SIZE = ObjectSizes.measure(new ComplexColumnData(ColumnMetadata.regularColumn("", "", "", SetType.getInstance(ByteType.instance, true)), NO_CELLS, new DeletionTime(0, 0)));
@@ -118,6 +121,7 @@ public class ComplexColumnData extends ColumnData implements Iterable<Cell<?>>
         int size = complexDeletion.dataSize();
         for (Cell<?> cell : this)
             size += cell.dataSize();
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/rows/ComplexColumnData.java@119");
         return size;
     }
 
@@ -127,6 +131,7 @@ public class ComplexColumnData extends ColumnData implements Iterable<Cell<?>>
         // TODO: this can be turned into a simple multiplication, at least while we have only one Cell implementation
         for (Cell<?> cell : this)
             heapSize += cell.unsharedHeapSizeExcludingData();
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/rows/ComplexColumnData.java@128");
         return heapSize;
     }
 

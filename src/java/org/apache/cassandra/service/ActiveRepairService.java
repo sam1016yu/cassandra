@@ -567,6 +567,7 @@ public class ActiveRepairService implements IEndpointStateChangeSubscriber, IFai
         List<TableId> tableIds = new ArrayList<>(columnFamilyStores.size());
         for (ColumnFamilyStore cfs : columnFamilyStores)
             tableIds.add(cfs.metadata.id);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/service/ActiveRepairService.java@568");
 
         for (InetAddressAndPort neighbour : endpoints)
         {
@@ -701,6 +702,7 @@ public class ActiveRepairService implements IEndpointStateChangeSubscriber, IFai
             return null;
         for (ColumnFamilyStore cfs : session.columnFamilyStores.values())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/service/ActiveRepairService.java@702");
             if (cfs.snapshotExists(snapshotName))
                 cfs.clearSnapshot(snapshotName);
         }

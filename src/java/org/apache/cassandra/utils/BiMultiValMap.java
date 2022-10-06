@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.utils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -36,6 +38,7 @@ import com.google.common.collect.Multimaps;
  */
 public class BiMultiValMap<K, V> implements Map<K, V>
 {
+public static final Logger logger = LoggerFactory.getLogger(BiMultiValMap.class);
     protected final Map<K, V> forwardMap;
     protected final Multimap<V, K> reverseMap;
 
@@ -126,6 +129,7 @@ public class BiMultiValMap<K, V> implements Map<K, V>
         Collection<K> keys = reverseMap.removeAll(value);
         for (K key : keys)
             forwardMap.remove(key);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/utils/BiMultiValMap.java@127");
         return keys;
     }
 

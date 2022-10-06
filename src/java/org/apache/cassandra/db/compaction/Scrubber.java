@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db.compaction;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.io.*;
@@ -46,6 +48,7 @@ import org.apache.cassandra.utils.memory.HeapAllocator;
 
 public class Scrubber implements Closeable
 {
+public static final Logger logger = LoggerFactory.getLogger(Scrubber.class);
     private final ColumnFamilyStore cfs;
     private final SSTableReader sstable;
     private final LifecycleTransaction transaction;
@@ -182,6 +185,7 @@ public class Scrubber implements Closeable
 
             while (!dataFile.isEOF())
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/compaction/Scrubber.java@183");
                 if (scrubInfo.isStopRequested())
                     throw new CompactionInterruptedException(scrubInfo.getCompactionInfo());
 

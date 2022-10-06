@@ -116,6 +116,7 @@ public class StatusLogger
         logger.info(String.format("%-25s%20s", "Table", "Memtable ops,data"));
         for (ColumnFamilyStore cfs : ColumnFamilyStore.all())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/utils/StatusLogger.java@117");
             logger.info(String.format("%-25s%20s",
                                       cfs.keyspace.getName() + "." + cfs.name,
                                       cfs.metric.memtableColumnsCount.getValue() + "," + cfs.metric.memtableLiveDataSize.getValue()));

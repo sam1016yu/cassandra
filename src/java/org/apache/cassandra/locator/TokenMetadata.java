@@ -184,6 +184,7 @@ public class TokenMetadata
         Multimap<InetAddressAndPort, Token> endpointTokens = HashMultimap.create();
         for (Token token : tokens)
             endpointTokens.put(endpoint, token);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/locator/TokenMetadata.java@185");
         updateNormalTokens(endpointTokens);
     }
 
@@ -343,6 +344,7 @@ public class TokenMetadata
 
             for (Token token : tokens)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/locator/TokenMetadata.java@344");
                 oldEndpoint = bootstrapTokens.get(token);
                 if (oldEndpoint != null && !oldEndpoint.equals(endpoint))
                     throw new RuntimeException("Bootstrap Token collision between " + oldEndpoint + " and " + endpoint + " (token " + token);
@@ -356,6 +358,7 @@ public class TokenMetadata
 
             for (Token token : tokens)
                 bootstrapTokens.put(token, endpoint);
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/locator/TokenMetadata.java@357");
         }
         finally
         {

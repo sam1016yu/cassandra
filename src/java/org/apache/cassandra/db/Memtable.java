@@ -474,6 +474,7 @@ public class Memtable implements Comparable<Memtable>
             //  since the memtable is being used for queries in the "pending flush" category)
             for (AtomicBTreePartition partition : toFlush.values())
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/Memtable.java@475");
                 // Each batchlog partition is a separate entry in the log. And for an entry, we only do 2
                 // operations: 1) we insert the entry and 2) we delete it. Further, BL data is strictly local,
                 // we don't need to preserve tombstones for repair. So if both operation are in this

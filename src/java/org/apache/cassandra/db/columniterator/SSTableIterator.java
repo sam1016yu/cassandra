@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db.columniterator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.NoSuchElementException;
@@ -32,6 +34,7 @@ import org.apache.cassandra.io.util.FileHandle;
  */
 public class SSTableIterator extends AbstractSSTableIterator
 {
+public static final Logger logger = LoggerFactory.getLogger(SSTableIterator.class);
     /**
      * The index of the slice being processed.
      */
@@ -113,6 +116,7 @@ public class SSTableIterator extends AbstractSSTableIterator
             // clustering value than the slice, we'll simply record it in 'openMarker').
             while (deserializer.hasNext() && deserializer.compareNextTo(start) <= 0)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/columniterator/SSTableIterator.java@114");
                 if (deserializer.nextIsRow())
                     deserializer.skipNext();
                 else

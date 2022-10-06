@@ -2175,6 +2175,7 @@ public class ColumnFamilyStore implements ColumnFamilyStoreMBean
         List<Iterable<ColumnFamilyStore>> stores = new ArrayList<>(Schema.instance.getKeyspaces().size());
         for (Keyspace keyspace : Keyspace.all())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/ColumnFamilyStore.java@2176");
             stores.add(keyspace.getColumnFamilyStores());
         }
         return Iterables.concat(stores);

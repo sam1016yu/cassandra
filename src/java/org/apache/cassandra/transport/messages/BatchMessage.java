@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.transport.messages;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -48,6 +50,7 @@ import org.apache.cassandra.utils.MD5Digest;
 
 public class BatchMessage extends Message.Request
 {
+public static final Logger logger = LoggerFactory.getLogger(BatchMessage.class);
     public static final Message.Codec<BatchMessage> codec = new Message.Codec<BatchMessage>()
     {
         public BatchMessage decode(ByteBuf body, ProtocolVersion version)
@@ -173,6 +176,7 @@ public class BatchMessage extends Message.Request
             prepared = new ArrayList<>(queryOrIdList.size());
             for (int i = 0; i < queryOrIdList.size(); i++)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/transport/messages/BatchMessage.java@174");
                 Object query = queryOrIdList.get(i);
                 CQLStatement statement;
                 QueryHandler.Prepared p;
@@ -202,6 +206,7 @@ public class BatchMessage extends Message.Request
             List<String> queries = QueryEvents.instance.hasListeners() ? new ArrayList<>(prepared.size()) : null;
             for (int i = 0; i < prepared.size(); i++)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/transport/messages/BatchMessage.java@203");
                 CQLStatement statement = prepared.get(i).statement;
                 if (queries != null)
                     queries.add(prepared.get(i).rawCQLStatement);

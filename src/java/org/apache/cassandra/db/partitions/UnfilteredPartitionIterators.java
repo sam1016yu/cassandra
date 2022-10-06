@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db.partitions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOError;
 import java.io.IOException;
@@ -37,6 +39,7 @@ import org.apache.cassandra.utils.MergeIterator;
  */
 public abstract class UnfilteredPartitionIterators
 {
+public static final Logger logger = LoggerFactory.getLogger(UnfilteredPartitionIterators.class);
     private static final Serializer serializer = new Serializer();
 
     private static final Comparator<UnfilteredRowIterator> partitionComparator = (p1, p2) -> p1.partitionKey().compareTo(p2.partitionKey());
@@ -302,6 +305,7 @@ public abstract class UnfilteredPartitionIterators
             out.writeBoolean(false);
             while (iter.hasNext())
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/partitions/UnfilteredPartitionIterators.java@303");
                 out.writeBoolean(true);
                 try (UnfilteredRowIterator partition = iter.next())
                 {

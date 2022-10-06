@@ -675,6 +675,7 @@ public class Gossiper implements IFailureDetectionEventListener, GossiperMBean
         Collections.shuffle(endpoints, random);
         for (InetAddressAndPort endpoint : endpoints)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/Gossiper.java@676");
             epState = endpointStateMap.get(endpoint);
             if (epState != null)
             {
@@ -999,6 +1000,7 @@ public class Gossiper implements IFailureDetectionEventListener, GossiperMBean
         Set<InetAddressAndPort> eps = endpointStateMap.keySet();
         for (InetAddressAndPort endpoint : eps)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/Gossiper.java@1000");
             if (endpoint.equals(FBUtilities.getBroadcastAddressAndPort()))
                 continue;
 
@@ -1193,6 +1195,7 @@ public class Gossiper implements IFailureDetectionEventListener, GossiperMBean
     {
         for (Entry<InetAddressAndPort, EndpointState> entry : remoteEpStateMap.entrySet())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/Gossiper.java@1194");
             notifyFailureDetector(entry.getKey(), entry.getValue());
         }
     }
@@ -1419,6 +1422,7 @@ public class Gossiper implements IFailureDetectionEventListener, GossiperMBean
         checkProperThreadForStateMutation();
         for (Entry<InetAddressAndPort, EndpointState> entry : epStateMap.entrySet())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/Gossiper.java@1420");
             InetAddressAndPort ep = entry.getKey();
             if ( ep.equals(FBUtilities.getBroadcastAddressAndPort()) && !isInShadowRound())
                 continue;
@@ -1586,6 +1590,7 @@ public class Gossiper implements IFailureDetectionEventListener, GossiperMBean
         Map<InetAddressAndPort, EndpointState> map = new HashMap<>();
         for (Entry<InetAddressAndPort, EndpointState> e : endpointStateMap.entrySet())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/Gossiper.java@1587");
             InetAddressAndPort endpoint = e.getKey();
             EndpointState state = new EndpointState(e.getValue());
             if (state.isEmptyWithoutStatus())
@@ -1638,6 +1643,7 @@ public class Gossiper implements IFailureDetectionEventListener, GossiperMBean
         assert !gDigestList.isEmpty() : "examineGossiper called with empty digest list";
         for ( GossipDigest gDigest : gDigestList )
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/Gossiper.java@1639");
             int remoteGeneration = gDigest.getGeneration();
             int maxRemoteVersion = gDigest.getMaxVersion();
             /* Get state associated with the end point in digest */

@@ -17,6 +17,8 @@
  * under the License.
  */
 package org.apache.cassandra.triggers;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.nio.ByteBuffer;
@@ -41,6 +43,7 @@ import org.apache.cassandra.utils.Pair;
 
 public class TriggerExecutor
 {
+public static final Logger logger = LoggerFactory.getLogger(TriggerExecutor.class);
     public static final TriggerExecutor instance = new TriggerExecutor();
 
     private final Map<String, ITrigger> cachedTriggers = Maps.newConcurrentMap();
@@ -117,6 +120,7 @@ public class TriggerExecutor
 
         for (IMutation mutation : mutations)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/triggers/TriggerExecutor.java@118");
             if (mutation instanceof CounterMutation)
                 hasCounters = true;
 

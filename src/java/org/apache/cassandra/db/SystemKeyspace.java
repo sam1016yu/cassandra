@@ -782,6 +782,7 @@ public final class SystemKeyspace
         Set<String> s = new HashSet<>(tokens.size());
         for (Token tk : tokens)
             s.add(factory.toString(tk));
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/SystemKeyspace.java@783");
         return s;
     }
 

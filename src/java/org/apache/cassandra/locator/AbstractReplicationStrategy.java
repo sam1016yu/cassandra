@@ -225,6 +225,7 @@ public abstract class AbstractReplicationStrategy
 
         for (Token token : metadata.sortedTokens())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/locator/AbstractReplicationStrategy.java@226");
             Range<Token> range = metadata.getPrimaryRangeFor(token);
             for (Replica replica : calculateNaturalReplicas(token, metadata))
             {
@@ -242,6 +243,7 @@ public abstract class AbstractReplicationStrategy
         RangesAtEndpoint.Builder builder = RangesAtEndpoint.builder(endpoint);
         for (Token token : metadata.sortedTokens())
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/locator/AbstractReplicationStrategy.java@243");
             Range<Token> range = metadata.getPrimaryRangeFor(token);
             Replica replica = calculateNaturalReplicas(token, metadata)
                     .byEndpoint().get(endpoint);

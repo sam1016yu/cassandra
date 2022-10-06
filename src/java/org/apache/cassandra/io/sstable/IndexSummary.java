@@ -283,6 +283,7 @@ public class IndexSummary extends WrappedSharedCloseable
             int baseOffset = t.offsetCount * 4;
             for (int i = 0 ; i < t.offsetCount ; i++)
             {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/io/sstable/IndexSummary.java@284");
                 int offset = t.offsets.getInt(i * 4) + baseOffset;
                 // our serialization format for this file uses native byte order, so if this is different to the
                 // default Java serialization order (BIG_ENDIAN) we have to reverse our bytes

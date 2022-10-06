@@ -84,6 +84,7 @@ public class GossipDigestAckVerbHandler extends GossipVerbHandler<GossipDigestAc
         Map<InetAddressAndPort, EndpointState> deltaEpStateMap = new HashMap<>();
         for (GossipDigest gDigest : gDigestList)
         {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/gms/GossipDigestAckVerbHandler.java@85");
             InetAddressAndPort addr = gDigest.getEndpoint();
             EndpointState localEpStatePtr = Gossiper.instance.getStateForVersionBiggerThan(addr, gDigest.getMaxVersion());
             if (localEpStatePtr != null)

@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.cql3;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.apache.cassandra.cql3.Constants.UNSET_VALUE;
 
@@ -40,6 +42,7 @@ import org.apache.cassandra.utils.ByteBufferUtil;
  */
 public abstract class Sets
 {
+public static final Logger logger = LoggerFactory.getLogger(Sets.class);
     private Sets() {}
 
     public static ColumnSpecification valueSpecOf(ColumnSpecification column)
@@ -218,6 +221,7 @@ public abstract class Sets
                 SortedSet<ByteBuffer> elements = new TreeSet<>(type.getElementsType());
                 for (Object element : s)
                     elements.add(type.getElementsType().decompose(element));
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/Sets.java@219");
                 return new Value(elements);
             }
             catch (MarshalException e)
@@ -355,6 +359,7 @@ public abstract class Sets
 
                 for (ByteBuffer bb : ((Value) value).elements)
                 {
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/cql3/Sets.java@356");
                     if (bb == ByteBufferUtil.UNSET_BYTE_BUFFER)
                         continue;
 

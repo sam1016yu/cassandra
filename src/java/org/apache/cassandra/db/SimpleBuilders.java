@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 package org.apache.cassandra.db;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -40,6 +42,7 @@ import org.apache.cassandra.utils.UUIDGen;
 
 public abstract class SimpleBuilders
 {
+public static final Logger logger = LoggerFactory.getLogger(SimpleBuilders.class);
     private SimpleBuilders()
     {
     }
@@ -392,6 +395,7 @@ public abstract class SimpleBuilders
                     assert value instanceof List;
                     for (Object elt : (List)value)
                         builder.addCell(cell(column, toByteBuffer(elt, lt.getElementsType()), CellPath.create(ByteBuffer.wrap(UUIDGen.getTimeUUIDBytes()))));
+logger.warn("CustomAnnot|Loop|org/apache/cassandra/db/SimpleBuilders.java@393");
                     break;
                 case SET:
                     SetType st = (SetType)column.type;
