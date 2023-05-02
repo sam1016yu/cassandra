@@ -66,7 +66,7 @@
  @BenchmarkMode(Mode.Throughput)
  @OutputTimeUnit(TimeUnit.SECONDS)
  @Warmup(iterations = 10, time = 1, timeUnit = TimeUnit.SECONDS)
- @Measurement(iterations = 20, time = 10, timeUnit = TimeUnit.SECONDS)
+ @Measurement(iterations = 10, time = 10, timeUnit = TimeUnit.SECONDS)
  @Fork(value = 1,jvmArgsAppend = "-Xmx512m")
  @Threads(1)
  @State(Scope.Benchmark)
