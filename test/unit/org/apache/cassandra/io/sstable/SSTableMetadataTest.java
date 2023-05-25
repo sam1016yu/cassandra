@@ -41,6 +41,7 @@ import org.apache.cassandra.utils.ByteBufferUtil;
 import static org.apache.cassandra.Util.getBytes;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import org.apache.commons.lang3.StringUtils;
 
 public class SSTableMetadataTest
 {
@@ -242,6 +243,33 @@ public class SSTableMetadataTest
             assertEquals(ByteBufferUtil.string(sstable.getSSTableMetadata().maxClusteringValues.get(0)), "9col298");
         }
     }
+
+
+    @Test
+    public void trackClusteringValuesMinimize()throws CharacterCodingException, ExecutionException, InterruptedException{
+            for (int col_width = 100; col_width <= 1000; col_width += 100 ){
+                System.out.println("!!!col_width: " + col_width);
+                Keyspace keyspace = Keyspace.open(KEYSPACE1);
+                ColumnFamilyStore store = keyspace.getColumnFamilyStore("Standard3");
+                for (int j = 0; j < 8; j++)
+                {
+                    String key = "row" + j;
+                    for (int i = 100; i<150; i++)
+                    {
+                        new RowUpdateBuilder(store.metadata, System.currentTimeMillis(), key)
+                            .clustering(j + StringUtils.repeat("a", col_width) + i)
+                            .add("val", ByteBufferUtil.EMPTY_BYTE_BUFFER)
+                            .build()
+                            .applyUnsafe();
+                    }
+                }
+                store.forceBlockingFlush();
+                SSTableReader sstable = store.getLiveSSTables().iterator().next();
+                System.out.println("!!!minBufSize: " + sstable.getSSTableMetadata().maxClusteringValues.get(0).capacity());
+                System.out.println("!!!maxBufSize: " + sstable.getSSTableMetadata().maxClusteringValues.get(0).capacity());
+            }       
+    }
+
 
     /*@Test
     public void testLegacyCounterShardTracking()
