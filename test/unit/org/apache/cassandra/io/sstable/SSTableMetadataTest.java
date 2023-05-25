@@ -257,7 +257,7 @@ public class SSTableMetadataTest
                     for (int i = 100; i<150; i++)
                     {
                         new RowUpdateBuilder(store.metadata, System.currentTimeMillis(), key)
-                            .clustering(j + StringUtils.repeat("a", col_width) + i)
+                            .clustering(j + StringUtils.repeat("a", col_width-4) + i)
                             .add("val", ByteBufferUtil.EMPTY_BYTE_BUFFER)
                             .build()
                             .applyUnsafe();
@@ -266,7 +266,6 @@ public class SSTableMetadataTest
                 store.forceBlockingFlush();
                 SSTableReader sstable = store.getLiveSSTables().iterator().next();
                 System.out.println("!!!minBufSize: " + sstable.getSSTableMetadata().maxClusteringValues.get(0).capacity());
-                System.out.println("!!!maxBufSize: " + sstable.getSSTableMetadata().maxClusteringValues.get(0).capacity());
             }       
     }
 
