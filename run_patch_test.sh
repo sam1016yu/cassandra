@@ -17,3 +17,5 @@ ant testsome \
 grep -F '!!!' raw_output.log > $result_file
 
 rm raw_output.log
+
+mv $result_file $HOME
