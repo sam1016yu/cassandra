@@ -14,11 +14,13 @@ if [ -d $result_file ]; then
     rm -f $result_file
 fi
 
-ant testsome \
--Dtest.name=org.apache.cassandra.repair.RepairJobCustomTest \
--Dtest.methods=releaseThreadAfterSessionForceShutdown \
-&> raw_output.log
-
-grep -F '!!!' raw_output.log > $result_file
+for rep in 1 2 3
+do
+    ant testsome \
+    -Dtest.name=org.apache.cassandra.repair.RepairJobCustomTest \
+    -Dtest.methods=releaseThreadAfterSessionForceShutdown \
+    &> raw_output.log
+    grep -F '!!!' raw_output.log >> $result_file
+done
 rm raw_output.log
 mv $result_file $HOME
