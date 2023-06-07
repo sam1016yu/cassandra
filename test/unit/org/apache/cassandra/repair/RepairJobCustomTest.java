@@ -218,7 +218,7 @@ public class RepairJobCustomTest extends SchemaLoader
 
             jobThread.join(TimeUnit.SECONDS.toMillis(TEST_TIMEOUT_S));
 
-            long repairJobSize = ObjectSizes.measureDeep(job);
+             long repairJobSize = ObjectSizes.measureDeep(jobThread);
 
 
             System.out.println("!!!jobSize: " + repairJobSize);
