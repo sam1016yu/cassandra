@@ -176,7 +176,6 @@ public class RepairJobCustomTest extends SchemaLoader
         DatabaseDescriptor.setBroadcastAddress(addr1);
     }
 
-    @After
     public void reset()
     {
         ActiveRepairService.instance.terminateSessions();
@@ -192,36 +191,39 @@ public class RepairJobCustomTest extends SchemaLoader
     public void releaseThreadAfterSessionForceShutdown() throws Throwable
     {
         
-        Map<InetAddress, MerkleTrees> mockTrees = new HashMap<>();
-        mockTrees.put(FBUtilities.getBroadcastAddress(), createInitialTree(false));
+        for (int numNeighbors=5;numNeighbors<=50;numNeighbors+=10){
+            System.out.println("!!!numNeighbors: " + numNeighbors);
+            
         
-        int numNeighbors = 5;
-        setup(numNeighbors);
-        for (int i=2; i<=1+numNeighbors; i++){
-            mockTrees.put(getAddr(i), createInitialTree(false));
+            Map<InetAddress, MerkleTrees> mockTrees = new HashMap<>();
+            mockTrees.put(FBUtilities.getBroadcastAddress(), createInitialTree(false));
+            
+            
+            setup(numNeighbors);
+            for (int i=2; i<=1+numNeighbors; i++){
+                mockTrees.put(getAddr(i), createInitialTree(false));
+            }
+
+            List<MessageOut> observedMessages = new ArrayList<>();
+            interceptRepairMessages(mockTrees, observedMessages);
+
+            session.simulateValidationsOutstanding();
+
+            Thread jobThread = new Thread(() -> job.run());
+            jobThread.start();
+
+            session.waitUntilReceivedFirstValidationComplete();
+
+            session.forceShutdown(new Exception("force shutdown for testing"));
+
+            jobThread.join(TimeUnit.SECONDS.toMillis(TEST_TIMEOUT_S));
+
+            long repairJobSize = ObjectSizes.measureDeep(job);
+
+
+            System.out.println("!!!jobSize: " + repairJobSize);
+            reset();
         }
-
-        List<MessageOut> observedMessages = new ArrayList<>();
-        interceptRepairMessages(mockTrees, observedMessages);
-
-        session.simulateValidationsOutstanding();
-
-        Thread jobThread = new Thread(() -> job.run());
-        jobThread.start();
-
-        session.waitUntilReceivedFirstValidationComplete();
-
-        session.forceShutdown(new Exception("force shutdown for testing"));
-
-        jobThread.join(TimeUnit.SECONDS.toMillis(TEST_TIMEOUT_S));
-
-        long validatingSize = ObjectSizes.measureDeep(session.validating);
-        long syncingSize = ObjectSizes.measureDeep(session.syncingTasks);
-
-        System.out.println("!!!validatingSize: " + validatingSize);
-        System.out.println("!!!syncingSize: " + syncingSize);
-        // assertFalse("expect that the job thread has been finished and not waiting on the outstanding validations forever", jobThread.isAlive());
-
     }
     
 
