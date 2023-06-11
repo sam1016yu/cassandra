@@ -26,6 +26,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.*;
+import com.google.common.annotations.VisibleForTesting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -139,6 +140,12 @@ public class RepairSession extends AbstractFuture<RepairSessionResult> implement
     public UUID getId()
     {
         return id;
+    }
+
+    @VisibleForTesting
+    protected DebuggableThreadPoolExecutor createExecutor()
+    {
+        return DebuggableThreadPoolExecutor.createCachedThreadpoolWithMaxSize("RepairJobTask");
     }
 
     public Collection<Range<Token>> getRanges()
